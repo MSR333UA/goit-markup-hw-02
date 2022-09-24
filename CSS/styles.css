@@ -1,0 +1,88 @@
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --contact-footer-color: rgba(255, 255, 255, 0.6);
+    --background-color: #F5F5F5;
+    --background-header-color: #FFFFFF;
+    --background-team-color: #F5F4FA;
+    --background-footer-color: #2F303A;
+    --link-hover-color: #2196F3;
+    --logo1-color: #000000;
+
+
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+    font-family: 'Roboto';
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Меню навігації */
+
+
+.logo {
+    color: var(--link-hover-color);
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+}
+
+.logo1 {
+    color: var(--logo1-color);
+}
+
+.nav .link {
+    color: var(--primary-text-color);
+}
+
+.nav .link:hover {
+    color: var(--link-hover-color)
+}
+
+.contact .link {
+    color: var(--title-text-color);
+}
+
+.contact .link:hover {
+    color: var(--link-hover-color);
+}
+
+/* Рішення для бізнесу */
+
+.business {
+    background: var(--background-footer-color);
+}
+
+.business .title {
+    color: var(--background-header-color);
+}
+
+
+.business-button {
+    color: var(--background-header-color);
+    background-color: var(--link-hover-color);
+}
+
+/* Наші переваги */
+
+.advantages .title {
+    color: var(--primary-text-color);
+}
