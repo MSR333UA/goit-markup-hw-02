@@ -16,12 +16,13 @@ body {
     color: var(--primary-text-color);
     background-color: var(--background-color);
     font-family: 'Roboto';
+
 }
 
-ul {
+/* ul {
     list-style: none;
 }
-
+ */
 
 /* Меню навігації */
 
@@ -53,7 +54,8 @@ ul {
     color: var(--primary-text-color);
 }
 
-.nav .link:hover {
+.nav .link:hover,
+.nav .link:focus {
     color: var(--link-hover-color)
 }
 
@@ -61,8 +63,10 @@ ul {
     color: var(--title-text-color);
 }
 
-.contact .link:hover {
+.contact .link:hover,
+.contact .link:focus {
     color: var(--link-hover-color);
+    
 }
 
 /* Рішення для бізнесу */
