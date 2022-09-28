@@ -51,8 +51,7 @@ color: var(--primary-text-color);
 }
 
 .nav .link:hover,
-.nav .link:focus
-.nav .link.current {
+.nav .link:focus {
 color: var(--link-hover-color);
 }
 
@@ -78,7 +77,6 @@ background-color: var(--bg-footer-color);
 }
 
 .hero .title {
-
 color: var(--bg-color);
 font-weight: 900;
 font-size: 44px;
@@ -90,12 +88,20 @@ text-transform: uppercase;
 
 
 .button {
+font-family: inherit
 color: var(--bg-color);
 background-color: var(--link-hover-color);
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
+}
+
+.button:hover,
+.button:focus {
+background-color: var(--link-hover-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 
 .button.pointer {
@@ -202,6 +208,7 @@ border-radius: 4px;
 font-weight: 500;
 font-size: 16px;
 line-height: calc(26/16);
+font-family: inherit
 }
 
 .filter-button:hover,
