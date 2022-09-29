@@ -46,8 +46,10 @@ list-style: none;
 text-decoration: none; 
 }
 
-.nav .link {
-color: var(--primary-text-color); 
+.items .link {
+color: var(--primary-text-color);
+font-weight: 500;
+letter-spacing: 0.02em;
 }
 
 .nav .link:hover,
@@ -63,6 +65,8 @@ color: var(--link-hover-color);
 
 .contact .link {
 color: var(--title-text-color); 
+font-weight: 500;
+letter-spacing: 0.02em;
     }
 
 .contact .link:hover,
@@ -88,13 +92,13 @@ text-transform: uppercase;
 
 
 .button {
-font-family: inherit
 color: var(--bg-color);
 background-color: var(--link-hover-color);
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
+font-family: inherit
 }
 
 .button:hover,
@@ -111,46 +115,62 @@ cursor: pointer;
 
 /* Наші переваги */
 
-
-.title {
-color: var(--primary-text-color);
-line-height: 1.14;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
-.text {
+
+.advantage-title {
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+}
+
+.advantage-text {
 color: var(--title-text-color);
-font-weight: 400;
 line-height: 1.71;
 }
 
 
 /* Чим ми займаємося */
-
 .features {
-font-size: 36px;
-line-height: 1.16;
 text-align: center;
 }
-
 
 /* Наша команда */
 
 .team {
+background-color: var(--bg-team-color);
+text-align: center;
+}
+
+.section-title {
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
-background-color: var(--bg-team-color);
 }
-
 .team-name {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 }
-.card {
-font-weight: 400;
+
+.team-text {
 font-size: 16px;
 line-height: 1.18;
+color: var(--title-text-color);
+}
+
+.team-card {
 background-color: var(--bg-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 02);
 border-radius: 0px 0px 4px 4px;
@@ -175,33 +195,29 @@ line-height: 1.19;
 color: var(--bg-color);
 }
 
-.address-linl {
+.address-link {
 color: var(--bg-color);  
 font-style: normal;
-font-weight: 400;
 line-height: 1.71;      
 }
-.address-linl:hover,
-.address-linl:focus {
+.address .link:hover,
+.address .link:focus {
 color: var(--link-hover-color);
 }
 
 .address .link {
 color: var(--contact-footer-color);
-font-weight: 400;
 font-style: normal;
 line-height: 1.71;
 }
 
-.address .link:hover,
-.address .link:focus {color: var(--link-hover-color);
-}
 
 
 /* Filter */
 
 
-.filter-button {
+.project-button {
+cursor: pointer;
 color: var(--primary-text-color);
 background-color: var(--bg-team-color);
 border-radius: 4px;
@@ -211,9 +227,9 @@ line-height: calc(26/16);
 font-family: inherit
 }
 
-.filter-button:hover,
-.filter-button:focus,
-.filter-button.urrent {
+.project-button:hover,
+.project-button:focus,
+.project-button.urrent {
 color: var(--bg-color);
 background-color: var(--link-hover-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -222,18 +238,20 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 /* Flter-card */
 
-.img-name {
-color: var(--primary-text-color);
-font-weight: 700;
+.project-card  {
+box-sizing: border-box;
+border: 1px solid #EEEEEE;
+}
+
+.project-name {
+
 font-size: 18px;
 line-height: calc(36/18);
 letter-spacing: 0.06em;
 }
 
-.filter-card {
-color: var(--title-text-color); 
-font-weight: 400;
+.project-text {
+color: var(--title-text-color);
 font-size: 16px;
 line-height: calc(30/16);
-border: 1px solid #EEEEEE;
 }
